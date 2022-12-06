@@ -4,30 +4,21 @@
 
 void inPut(int mat[COUNT][COUNT])
 {
-int j,k,i=0;
-int input;
-while (i<100)
-{
-//    printf("please anter a number:");
-    scanf("%d",&input);
-    for (  j = 0; j < COUNT; j++)
+    
+    for ( int j = 0; j < COUNT; j++)
     {
-        for ( k = 0; k < COUNT; k++)
+        for ( int k = 0; k < COUNT; k++)
         {   
+            scanf("%d",&mat[j][k]);
             if (k==j)
         {
             mat[j][k]=0;
         }
-        else
-        {
-            mat[j][k]=input;
-            mat[k][j]=input;
+       
         }
-        }
-    i++;
     }
 }
-}
+
 
 void floydWarshall(int mat [COUNT][COUNT])
 {
@@ -48,17 +39,21 @@ for (i = 0;i<COUNT;i++)
 }
 
 
-bool pathExistence(int a, int b, int mat[COUNT][COUNT])
+void pathExistence(int a, int b, int mat[COUNT][COUNT])
 {
     if(mat[a][b]!=0)
     {
-    return true;
+    printf ("%s","true");
     }
-    else return false;
+    else
+    {
+    printf ("%s","false");
+    }
+    
 }
 
 
 int shortestPath(int a, int b, int mat[COUNT][COUNT])
 {
-    return mat[a][b];
+        printf ("%d",mat[a][b]); 
 }
