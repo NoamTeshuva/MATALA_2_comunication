@@ -6,7 +6,7 @@ void inPut(int mat[COUNT][COUNT])
 {
 int j,k,i=0;
 int input;
-while (i<45)
+while (i<100)
 {
     printf("please anter a number:");
     scanf("%d",&input);
