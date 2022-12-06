@@ -8,7 +8,7 @@ int j,k,i=0;
 int input;
 while (i<100)
 {
-    printf("please anter a number:");
+//    printf("please anter a number:");
     scanf("%d",&input);
     for (  j = 0; j < COUNT; j++)
     {
