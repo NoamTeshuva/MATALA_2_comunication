@@ -53,7 +53,7 @@ void pathExistence(int a, int b, int mat[COUNT][COUNT])
 }
 
 
-int shortestPath(int a, int b, int mat[COUNT][COUNT])
+void shortestPath(int a, int b, int mat[COUNT][COUNT])
 {
         printf ("%d",mat[a][b]); 
 }
